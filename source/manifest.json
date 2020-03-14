@@ -1,0 +1,20 @@
+{
+    "name": "CpCode_SO",
+    "version": "1.0.1",
+    "manifest_version": 2,
+    "description": "using to copy code from Stack Overflow to clipboard",
+    "author": "SonTDc",
+    "permissions": [
+        "clipboardWrite",
+        "storage"
+    ],
+    "browser_action": {
+        "default_icon": "extension_icon.png"
+    },
+    "content_scripts": [{
+        "matches": ["https://*/*", "http://*/*"],
+        "js": ["inject.js"],
+        "run_at": "document_end"
+    }],
+    "offline_enabled": true
+}
