@@ -46,7 +46,7 @@ chrome.storage.local.get(null, function (result) {
 							});
 
 							window.getSelection().removeAllRanges();
-							block.style.outline = '2px solid #0D0';
+							block.style.outline = '5px solid #00A9DD';
 							setTimeout(function () {
 								return block.style.outline = 'none';
 							}, 500);
